@@ -76,3 +76,19 @@ $(document).ready(function() {
   name:'Jane', data:[1,0,4]}]
   }
   ```
+-  在创建命名的对象后,我们可以通过,操作符来扩展其成员.假设我们已经定义了一个对象(见良好的风格代码).下面的代码代码将添加 
+-  加另一个series.请记住options.series是一个数组,因此我们可以使用push方法
+```javascript
+      options.series.push({
+      name:''john',data:[3,4,2]})
+```
+- 另外一个可以排上用场的事实是,对于javaScript对象来说点符号（.）和方括号[]是等价的。所以，你可以通过名称来访问成员。这意味着：
+```javascirpt
+options.renderTo
+```
+### 等价于
+```javascript
+opntions['renderTo']
+```
+###  更多关于Highcharts 使用可以参考
+http://www.cnblogs.com/liuhaorain/archive/2012/01/24/2311352.html
